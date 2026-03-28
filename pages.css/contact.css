@@ -1,0 +1,75 @@
+/* Corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+/* Menu */
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #963232;
+    padding: 15px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Titre */
+h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Formulaire */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Champs */
+input, textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Boutons */
+button {
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Bouton envoyer */
+button[type="submit"] {
+    background-color: green;
+    color: white;
+}
+
+/* Bouton reset */
+button[type="reset"] {
+    background-color: red;
+    color: white;
+}
+
+/* Footer */
+p {
+    text-align: center;
+    margin-top: 30px;
+    color: #666;
+}

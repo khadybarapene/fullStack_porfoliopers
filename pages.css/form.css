@@ -1,0 +1,57 @@
+.content{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 2rem auto;
+}
+.content h2{
+    text-align: center;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+.content form{
+    display: flex;
+    flex-direction: column;
+    gap:70%;
+   
+}
+.content form label{
+    font-size: 1.2rem;
+    line-height: 0.5;
+    font-family: 'Times New Roman', Times, serif;
+}
+.content form input {
+  row-gap: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.content form textarea {
+    border: 1px solid #57a8f5;
+    border-radius: 5px;
+    row-gap: 10px;
+}
+
+.btn-sub-res {
+  display: flex;
+  justify-content: center;
+  gap: 6rem; /* Ajoute un espace entre les boutons */
+  padding: 2rem 0;
+}
+
+.btn-sub-res button[type="submit"] {
+  background-color: #57a8f5;
+  color: white;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-sub-res button[type="reset"] {
+  background-color: #f44336;
+  color: white;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+}
