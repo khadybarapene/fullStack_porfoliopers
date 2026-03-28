@@ -1,17 +1,21 @@
-/* Style global */
+/* GLOBAL */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
+    font-family: Arial, sans-serif;
     background-color: #f4f4f4;
 }
 
-/* Menu */
+/* HEADER */
+header {
+    background-color: #963232;
+    padding: 15px;
+}
+
+/* NAVIGATION */
 .nav-menu {
     display: flex;
     justify-content: center;
     gap: 20px;
-    background-color: #963232;
-    padding: 15px;
 }
 
 .nav-menu a {
@@ -20,55 +24,71 @@ body {
     font-weight: bold;
 }
 
-/* Titre */
+/* TITRE */
 h2 {
     text-align: center;
-    margin-top: 20px;
+    margin: 20px 0;
 }
 
-/* Conteneur des projets */
+/* LISTE PROJETS */
 .project-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 20px;
     padding: 20px;
-    max-width: 1000px;
+    max-width: 1100px;
     margin: auto;
 }
 
-/* Carte projet */
+/* CARTE PROJET */
 .project-item {
-    background-color: white;
-    border-radius: 10px;
+    background: white;
+    border-radius: 12px;
     padding: 15px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    transition: transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    text-align: center;
 }
 
-/* Effet au survol */
 .project-item:hover {
     transform: translateY(-5px);
 }
 
-/* Header du projet */
-.project-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
-/* Image */
-.project-header img {
+/* IMAGE */
+.project-item img {
     width: 100%;
-    max-width: 200px;
+    max-width: 220px;
     border-radius: 10px;
 }
 
-/* Footer */
+/* BOUTONS */
+.btn {
+    display: inline-block;
+    margin: 5px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Voir détails */
+.btn-view {
+    background-color: #2d89ef;
+    color: white;
+}
+
+/* Supprimer */
+.btn-delete {
+    background-color: #e74c3c;
+    color: white;
+}
+
+/* FOOTER */
 footer {
     text-align: center;
+    padding: 15px;
     margin-top: 30px;
-    padding: 10px;
+    background-color: #eee;
     color: #666;
 }
