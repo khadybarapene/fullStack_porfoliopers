@@ -1,0 +1,89 @@
+/* Style global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+/* Menu */
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #963232;
+    padding: 15px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Titre */
+h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Formulaire */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Labels */
+label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Inputs + textarea + file */
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Zone texte */
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+/* Boutons */
+button {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Bouton ajouter */
+button[type="submit"] {
+    background-color: rgb(100, 141, 100);
+    color: white;
+}
+
+/* Bouton reset */
+button[type="reset"] {
+    background-color: rgb(133, 66, 66);
+    color: white;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+    color: #666;
+}
