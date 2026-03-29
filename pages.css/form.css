@@ -58,3 +58,20 @@
 a {
     pointer-events: auto;
 }
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start; /* ✅ logo à gauche */
+  gap: 1rem;
+  padding: 1rem 2rem;
+  background-color: #1e173d;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #c8bef0;
+  }

@@ -5,13 +5,33 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Menu */
+/* HEADER */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #963232;
+    padding: 10px 20px;
+}
+
+/* Logo */
+.logo {
+    width: 60px;
+}
+
+/* Titre */
+.header-text {
+    flex: 1;
+    text-align: center;
+    color: white;
+}
+
+/* Menu à droite */
 .nav-menu {
     display: flex;
-    justify-content: center;
     gap: 20px;
-    background-color: #1b1e31;
-    padding: 15px;
+    background-color: #963232;
+    justify-content: right; /* pousse le menu à droite */
 }
 
 .nav-menu a {
@@ -20,7 +40,11 @@ body {
     font-weight: bold;
 }
 
-/* Titre */
+.nav-menu a:hover {
+    text-decoration: underline;
+}
+
+/* Titre secondaire */
 h2 {
     text-align: center;
     margin-top: 20px;
@@ -45,14 +69,14 @@ label {
     font-weight: bold;
 }
 
-/* Inputs + textarea + file */
+/* Inputs */
 input, textarea {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-/* Zone texte */
+/* textarea */
 textarea {
     resize: none;
     height: 100px;
@@ -68,13 +92,13 @@ button {
     font-weight: bold;
 }
 
-/* Bouton ajouter */
+/* Ajouter */
 button[type="submit"] {
     background-color: rgb(100, 141, 100);
     color: white;
 }
 
-/* Bouton reset */
+/* Reset */
 button[type="reset"] {
     background-color: rgb(133, 66, 66);
     color: white;

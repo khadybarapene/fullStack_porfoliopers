@@ -1,46 +1,23 @@
 /* ── GLOBAL ── */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: #ebe6e6;
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  color: #2e2ed3;
+  color: #2d2d3a; /* ✅ corrigé : #2e2ed3 était bleu */
 }
 
-/* ── HEADER ── */
-header {
-  background-color: #1e173d;
-  color: #ffffff;
-  padding: 2rem;
-  text-align: center;
-  width: 100%;
-}
-
-header h1 {
-  margin: 0 0 0.5rem 0;
-  font-size: 2rem;
-  color: #ffffff;
-  text-decoration: underline;
-}
-
-.subtitle-container {
-  text-align: center;
-}
-
-.subtitle {
-  color: #523c8a;
-  font-size: 1rem;
-  margin: 0;
-}
-
-/* ── NAVIGATION ── */
+/* ── NAVIGATION : à droite ── */
 nav.nav-menu {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  justify-content: flex-end; /* ✅ menu à droite */
   align-items: center;
   background-color: #403a5a;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 2rem;
   gap: 0.5rem;
   flex-wrap: wrap;
   width: 100%;
@@ -63,6 +40,51 @@ nav.nav-menu a:hover {
   color: #ffffff;
 }
 
+/* ── HEADER : logo gauche, texte centré ── */
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  background-color: #1e173d;
+  color: #ffffff;
+  width: 100%;
+  position: relative; /* ✅ pour centrer le texte */
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #c8bef0;
+  flex-shrink: 0;
+  z-index: 1;
+}
+
+.header-text {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #ffffff;
+  text-decoration: underline;
+  margin: 0 0 0.3rem 0;
+  white-space: nowrap;
+}
+
+.subtitle {
+  color: #c8bef0; /* ✅ corrigé : #523c8a était invisible */
+  font-size: 1rem;
+  margin: 0;
+}
+
 /* ── MAIN ── */
 main {
   max-width: 800px;
@@ -76,6 +98,7 @@ main {
 /* ── TITRES ── */
 h1, h2 {
   color: #403a5a;
+  text-align: left;
 }
 
 /* ── SECTIONS CONTENU ── */
@@ -83,6 +106,7 @@ h1, h2 {
   margin-bottom: 2rem;
   padding-bottom: 1.5rem;
   border-bottom: 1px solid #e0d9f0;
+  text-align: left;
 }
 
 .content:last-child {
@@ -94,9 +118,11 @@ h1, h2 {
 .content li {
   color: #2d2d3a;
   line-height: 1.75;
+  text-align: left;
 }
 
 .content ul {
+  list-style: disc outside;
   padding-left: 1.5rem;
 }
 
@@ -143,7 +169,4 @@ footer {
 footer p {
   margin: 0;
   font-size: 0.9rem;
-}
-a {
-    pointer-events: auto;
 }

@@ -14,10 +14,11 @@ header {
 /* NAVIGATION */
 .nav-menu {
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    justify-content: flex-end; /* pousse le menu à droite */
+    gap: 20px; /* espace entre les liens */
+    background-color: #963232;
+    padding: 10px 20px;
 }
-
 .nav-menu a {
     color: rgb(65, 21, 21);
     text-decoration: none;
@@ -92,6 +93,20 @@ footer {
     background-color: #eee;
     color: #666;
 }
-a {
-    pointer-events: auto;
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start; /* ✅ logo à gauche */
+  gap: 1rem;
+  padding: 1rem 2rem;
+  background-color: #1e173d;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #c8bef0;
 }
