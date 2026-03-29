@@ -19,7 +19,7 @@ header {
 }
 
 .nav-menu a {
-    color: white;
+    color: rgb(65, 21, 21);
     text-decoration: none;
     font-weight: bold;
 }
@@ -91,4 +91,7 @@ footer {
     margin-top: 30px;
     background-color: #eee;
     color: #666;
+}
+a {
+    pointer-events: auto;
 }

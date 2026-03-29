@@ -73,3 +73,6 @@ footer {
     background-color: #eee;
     color: #666;
 }
+a {
+    pointer-events: auto;
+}

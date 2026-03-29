@@ -55,3 +55,6 @@
   border: none;
   border-radius: 5px;
 }
+a {
+    pointer-events: auto;
+}

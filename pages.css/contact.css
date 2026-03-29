@@ -73,3 +73,6 @@ p {
     margin-top: 30px;
     color: #666;
 }
+a {
+    pointer-events: auto;
+}
